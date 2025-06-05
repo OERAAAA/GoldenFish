@@ -1,462 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5254434787176267743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Audio/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-
-  lastModified: 638847802143457650
-
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 1622
-  Exists: 1
---- !u!114 &-3579665420708230035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SoundFX/Puppet/FX_Footstep
-  m_EditorClassIdentifier: 
-  Path: event:/SoundFX/Puppet/FX_Footstep
-  guid: f09b67e4f6da8444bd87423f2fa0916f
-  Banks:
-  - {fileID: 130793926364020771}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &-2572806191395560692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SoundFX/Chime/FX_Conch
-  m_EditorClassIdentifier: 
-  Path: event:/SoundFX/Chime/FX_Conch
-  guid: 6d6c85b23f70e14881ad687de85a3c34
-  Banks:
-  - {fileID: 130793926364020771}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &-2509692553804910307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/BGM_Frog
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/BGM_Frog
-  guid: b509daaac019814d90cfd15f5faf34e1
-  Banks:
-  - {fileID: 130793926364020771}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 172986
---- !u!114 &-2093879885623859619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/BGM_Puppet
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/BGM_Puppet
-  guid: 3ad4d91d8d7c2b4bbbc0c12b91e98ba6
-  Banks:
-  - {fileID: 130793926364020771}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 51500
---- !u!114 &-1248527653635635767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/BGM_Camera
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/BGM_Camera
-  guid: a73b9675963f074a834227210c3624d1
-  Banks:
-  - {fileID: 130793926364020771}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 98000
---- !u!114 &-1122762636310000362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/BGM_Painting
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/BGM_Painting
-  guid: 8143ee050fc4a64b8152ed460fa18498
-  Banks:
-  - {fileID: 130793926364020771}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 94000
---- !u!114 &-149723333333946929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/BGM_Chime
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/BGM_Chime
-  guid: 8024a5223ed5ff4eac938fa7959bb148
-  Banks:
-  - {fileID: 130793926364020771}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 104000
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: -5254434787176267743}
-  - {fileID: 130793926364020771}
-  EditorEvents:
-  - {fileID: 2989376949944072491}
-  - {fileID: 3159281721482192541}
-  - {fileID: 7591084364301704650}
-  - {fileID: 4480573400366305491}
-  - {fileID: 972548913505032277}
-  - {fileID: -149723333333946929}
-  - {fileID: 3440274207840862829}
-  - {fileID: 1485410370977263076}
-  - {fileID: 3034251310992001578}
-  - {fileID: 5745733270900394231}
-  - {fileID: 2068241243325954486}
-  - {fileID: -3579665420708230035}
-  - {fileID: 2552569714496581336}
-  - {fileID: -2093879885623859619}
-  - {fileID: 3800038750363276557}
-  - {fileID: -1122762636310000362}
-  - {fileID: 2616371092041464469}
-  - {fileID: -1248527653635635767}
-  - {fileID: -2509692553804910307}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: 130793926364020771}
-  StringsBanks:
-  - {fileID: -5254434787176267743}
-
-  stringsBankWriteTime: 638847802143457650
-
-  cacheVersion: 6
---- !u!114 &130793926364020771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Audio/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-
-  lastModified: 638847802143437728
-
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &972548913505032277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SoundFX/Plant/FX_GrowUp
-  m_EditorClassIdentifier: 
-  Path: event:/SoundFX/Plant/FX_GrowUp
-  guid: 75c12b32a32df94bac5b107785b9730d
-  Banks:
-  - {fileID: 130793926364020771}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &1485410370977263076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/BGM_GoldenFish
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/BGM_GoldenFish
-  guid: 908acb07139661468104f087c99f0932
-  Banks:
-  - {fileID: 130793926364020771}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 170000
---- !u!114 &2068241243325954486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SoundFX/Fish/FX_Swim
-  m_EditorClassIdentifier: 
-  Path: event:/SoundFX/Fish/FX_Swim
-  guid: e6ed6661b264884ca983e3bd957410e5
-  Banks:
-  - {fileID: 130793926364020771}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &2552569714496581336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/BGM_Children
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/BGM_Children
-  guid: 305aae2fccc7dd4c881f8733062294ee
-  Banks:
-  - {fileID: 130793926364020771}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 53500
---- !u!114 &2616371092041464469
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM/BGM_Plant
-  m_EditorClassIdentifier: 
-  Path: event:/BGM/BGM_Plant
-  guid: 9087e320e75628419fd734b5c2860f1c
-  Banks:
-  - {fileID: 130793926364020771}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 118000
---- !u!114 &2989376949944072491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SoundFX/Plant/FX_Blossom
-  m_EditorClassIdentifier: 
-  Path: event:/SoundFX/Plant/FX_Blossom
-  guid: 001b5072a6d57c4685f426b32184e151
-  Banks:
-  - {fileID: 130793926364020771}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &3034251310992001578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SoundFX/Fish/FX_Food
-  m_EditorClassIdentifier: 
-  Path: event:/SoundFX/Fish/FX_Food
-  guid: a61f8686dedba244b2a256cce74d2ffd
-  Banks:
-  - {fileID: 130793926364020771}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 8.55
-  Length: 0
---- !u!114 &3159281721482192541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SoundFX/Puppet/FX_Alarm
-  m_EditorClassIdentifier: 
-  Path: event:/SoundFX/Puppet/FX_Alarm
-  guid: 0071521beb4c0e4d96e98024bf426dac
-  Banks:
-  - {fileID: 130793926364020771}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &3440274207840862829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SoundFX/Fish/FX_Underwater
-  m_EditorClassIdentifier: 
-  Path: event:/SoundFX/Fish/FX_Underwater
-  guid: 86a83fdff305764a8a53a3b84c7d4a9a
-  Banks:
-  - {fileID: 130793926364020771}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 186508
---- !u!114 &3800038750363276557
+--- !u!114 &-8626985239650341042
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -471,7 +15,7 @@ MonoBehaviour:
   Path: event:/SoundFX/Camera/New Event
   guid: 4085530539b8aa4dab2f3f0a975a92eb
   Banks:
-  - {fileID: 130793926364020771}
+  - {fileID: 6112215195842393543}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -479,7 +23,53 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &4480573400366305491
+--- !u!114 &-8572223651669231389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX/Fish/FX_Swim
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX/Fish/FX_Swim
+  guid: e6ed6661b264884ca983e3bd957410e5
+  Banks:
+  - {fileID: 6112215195842393543}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-8559126463027188311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/BGM_Plant
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/BGM_Plant
+  guid: 9087e320e75628419fd734b5c2860f1c
+  Banks:
+  - {fileID: 6112215195842393543}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 118000
+--- !u!114 &-8432021628830859422
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -494,7 +84,7 @@ MonoBehaviour:
   Path: event:/SoundFX/Fish/FX_EatFood
   guid: 50a595dd6f30474cba58604e3456c86b
   Banks:
-  - {fileID: 130793926364020771}
+  - {fileID: 6112215195842393543}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -502,7 +92,76 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &5745733270900394231
+--- !u!114 &-7126938455496900535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/BGM_Painting
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/BGM_Painting
+  guid: 8143ee050fc4a64b8152ed460fa18498
+  Banks:
+  - {fileID: 6112215195842393543}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 94000
+--- !u!114 &-5229260199171753314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/BGM_Puppet
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/BGM_Puppet
+  guid: 3ad4d91d8d7c2b4bbbc0c12b91e98ba6
+  Banks:
+  - {fileID: 6112215195842393543}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 51500
+--- !u!114 &-4332257273384686115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/BGM_Camera
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/BGM_Camera
+  guid: a73b9675963f074a834227210c3624d1
+  Banks:
+  - {fileID: 6112215195842393543}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 98000
+--- !u!114 &-1959671303591206932
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -517,7 +176,7 @@ MonoBehaviour:
   Path: event:/SoundFX/Chime/FX_BellRing
   guid: cfa989999ec8d749921f0c3c290e8b63
   Banks:
-  - {fileID: 130793926364020771}
+  - {fileID: 6112215195842393543}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -525,7 +184,162 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &7591084364301704650
+--- !u!114 &-1360180958734787250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX/Fish/FX_Underwater
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX/Fish/FX_Underwater
+  guid: 86a83fdff305764a8a53a3b84c7d4a9a
+  Banks:
+  - {fileID: 6112215195842393543}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 186508
+--- !u!114 &-1084950802384259493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/BGM_Children
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/BGM_Children
+  guid: 305aae2fccc7dd4c881f8733062294ee
+  Banks:
+  - {fileID: 6112215195842393543}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 53500
+--- !u!114 &-247691714113154873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638847860347570583
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 1622
+  Exists: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -247691714113154873}
+  - {fileID: 6112215195842393543}
+  EditorEvents:
+  - {fileID: 4237653489344070427}
+  - {fileID: 8645147608577335902}
+  - {fileID: -1084950802384259493}
+  - {fileID: 3039055584306424733}
+  - {fileID: -5229260199171753314}
+  - {fileID: -8626985239650341042}
+  - {fileID: -8432021628830859422}
+  - {fileID: 2221326524232498005}
+  - {fileID: 7605716812477766216}
+  - {fileID: -7126938455496900535}
+  - {fileID: -1360180958734787250}
+  - {fileID: -8559126463027188311}
+  - {fileID: 817393913172181400}
+  - {fileID: 8551773180804383846}
+  - {fileID: -4332257273384686115}
+  - {fileID: 5087539547985926866}
+  - {fileID: -1959671303591206932}
+  - {fileID: -8572223651669231389}
+  - {fileID: 6591232479085052453}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 6112215195842393543}
+  StringsBanks:
+  - {fileID: -247691714113154873}
+  stringsBankWriteTime: 638847860347570583
+  cacheVersion: 6
+--- !u!114 &817393913172181400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/BGM_GoldenFish
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/BGM_GoldenFish
+  guid: 908acb07139661468104f087c99f0932
+  Banks:
+  - {fileID: 6112215195842393543}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 170000
+--- !u!114 &2221326524232498005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX/Plant/FX_GrowUp
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX/Plant/FX_GrowUp
+  guid: 75c12b32a32df94bac5b107785b9730d
+  Banks:
+  - {fileID: 6112215195842393543}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &3039055584306424733
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -540,11 +354,168 @@ MonoBehaviour:
   Path: event:/SoundFX/FX_GlassBall
   guid: 3722f6d92f216442a050d4249cdccfcf
   Banks:
-  - {fileID: 130793926364020771}
+  - {fileID: 6112215195842393543}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 10
   MaxDistance: 70
+  Length: 0
+--- !u!114 &4237653489344070427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX/Plant/FX_Blossom
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX/Plant/FX_Blossom
+  guid: 001b5072a6d57c4685f426b32184e151
+  Banks:
+  - {fileID: 6112215195842393543}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &5087539547985926866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/BGM_Frog
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/BGM_Frog
+  guid: b509daaac019814d90cfd15f5faf34e1
+  Banks:
+  - {fileID: 6112215195842393543}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 172986
+--- !u!114 &6112215195842393543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638847860347539853
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &6591232479085052453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX/Puppet/FX_Footstep
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX/Puppet/FX_Footstep
+  guid: f09b67e4f6da8444bd87423f2fa0916f
+  Banks:
+  - {fileID: 6112215195842393543}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &7605716812477766216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/BGM_Chime
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/BGM_Chime
+  guid: 8024a5223ed5ff4eac938fa7959bb148
+  Banks:
+  - {fileID: 6112215195842393543}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 104000
+--- !u!114 &8551773180804383846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX/Fish/FX_Food
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX/Fish/FX_Food
+  guid: a61f8686dedba244b2a256cce74d2ffd
+  Banks:
+  - {fileID: 6112215195842393543}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 8.55
+  Length: 0
+--- !u!114 &8645147608577335902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX/Puppet/FX_Alarm
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX/Puppet/FX_Alarm
+  guid: 0071521beb4c0e4d96e98024bf426dac
+  Banks:
+  - {fileID: 6112215195842393543}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
   Length: 0
