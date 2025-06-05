@@ -1013,7 +1013,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7504583976482051701, guid: 9932a10325fde674687a6d43392c3c14,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 600947636}
   m_SourcePrefab: {fileID: 100100000, guid: 9932a10325fde674687a6d43392c3c14, type: 3}
 --- !u!20 &203621239 stripped
 Camera:
@@ -3301,7 +3305,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 19ba35248a0ca874ba2fe22631089b09, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -3693,6 +3697,35 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.07000006, y: 0.14000003, z: 0.035000023}
   m_Center: {x: -0.00000011920929, y: -0.00000011920929, z: -0.00000012014061}
+--- !u!1 &600947635 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7504583976482051701, guid: 9932a10325fde674687a6d43392c3c14,
+    type: 3}
+  m_PrefabInstance: {fileID: 203621238}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &600947636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600947635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/BGM/BGM_Frog
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &648427724
 GameObject:
   m_ObjectHideFlags: 0
