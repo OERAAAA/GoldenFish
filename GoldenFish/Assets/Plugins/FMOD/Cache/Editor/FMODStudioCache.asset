@@ -15,11 +15,11 @@ MonoBehaviour:
   Path: Assets/Audio/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638834658614103512
+  lastModified: 638847724846794301
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 1358
+    Value: 1622
   Exists: 1
 --- !u!114 &-3579665420708230035
 MonoBehaviour:
@@ -67,6 +67,98 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-2509692553804910307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/BGM_Frog
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/BGM_Frog
+  guid: b509daaac019814d90cfd15f5faf34e1
+  Banks:
+  - {fileID: 130793926364020771}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 172986
+--- !u!114 &-2093879885623859619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/BGM_Puppet
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/BGM_Puppet
+  guid: 3ad4d91d8d7c2b4bbbc0c12b91e98ba6
+  Banks:
+  - {fileID: 130793926364020771}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 51500
+--- !u!114 &-1248527653635635767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/BGM_Camera
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/BGM_Camera
+  guid: a73b9675963f074a834227210c3624d1
+  Banks:
+  - {fileID: 130793926364020771}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 98000
+--- !u!114 &-1122762636310000362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/BGM_Painting
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/BGM_Painting
+  guid: 8143ee050fc4a64b8152ed460fa18498
+  Banks:
+  - {fileID: 130793926364020771}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 94000
 --- !u!114 &-149723333333946929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,7 +181,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 156144
+  Length: 104000
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,7 +202,6 @@ MonoBehaviour:
   - {fileID: 3159281721482192541}
   - {fileID: 7591084364301704650}
   - {fileID: 4480573400366305491}
-  - {fileID: -2572806191395560692}
   - {fileID: 972548913505032277}
   - {fileID: -149723333333946929}
   - {fileID: 3440274207840862829}
@@ -119,12 +210,19 @@ MonoBehaviour:
   - {fileID: 5745733270900394231}
   - {fileID: 2068241243325954486}
   - {fileID: -3579665420708230035}
+  - {fileID: 2552569714496581336}
+  - {fileID: -2093879885623859619}
+  - {fileID: 3800038750363276557}
+  - {fileID: -1122762636310000362}
+  - {fileID: 2616371092041464469}
+  - {fileID: -1248527653635635767}
+  - {fileID: -2509692553804910307}
   EditorParameters: []
   MasterBanks:
   - {fileID: 130793926364020771}
   StringsBanks:
   - {fileID: -5254434787176267743}
-  stringsBankWriteTime: 638834658614103512
+  stringsBankWriteTime: 638847724846794301
   cacheVersion: 6
 --- !u!114 &130793926364020771
 MonoBehaviour:
@@ -141,7 +239,7 @@ MonoBehaviour:
   Path: Assets/Audio/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638834658614043532
+  lastModified: 638847724846762008
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -214,6 +312,52 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &2552569714496581336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/BGM_Children
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/BGM_Children
+  guid: 305aae2fccc7dd4c881f8733062294ee
+  Banks:
+  - {fileID: 130793926364020771}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 53500
+--- !u!114 &2616371092041464469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/BGM_Plant
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/BGM_Plant
+  guid: 9087e320e75628419fd734b5c2860f1c
+  Banks:
+  - {fileID: 130793926364020771}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 118000
 --- !u!114 &2989376949944072491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,6 +450,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 186508
+--- !u!114 &3800038750363276557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX/Camera/New Event
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX/Camera/New Event
+  guid: 4085530539b8aa4dab2f3f0a975a92eb
+  Banks:
+  - {fileID: 130793926364020771}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &4480573400366305491
 MonoBehaviour:
   m_ObjectHideFlags: 0

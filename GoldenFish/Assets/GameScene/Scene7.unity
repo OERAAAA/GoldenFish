@@ -7271,7 +7271,7 @@ TerrainCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_TerrainData: {fileID: 15600000, guid: 42e0b4c4b30b9a848ba499f690cd7015, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: d832e64a7682e364c9a2caa731ad7a29, type: 2}
   m_EnableTreeColliders: 0
 --- !u!218 &275878744
 Terrain:
@@ -7282,7 +7282,7 @@ Terrain:
   m_GameObject: {fileID: 275878742}
   m_Enabled: 1
   serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: 42e0b4c4b30b9a848ba499f690cd7015, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: d832e64a7682e364c9a2caa731ad7a29, type: 2}
   m_TreeDistance: 5000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
@@ -58996,11 +58996,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xrOrigin: {fileID: 1720988798}
   head: {fileID: 1848346383}
-  moveSpeed: 1.5
+  minSwingSpeed: 1
+  minSwingAcceleration: 2
+  smoothFactor: 0.5
+  directionConsistencyThreshold: 0.7
+  minContinuousFrames: 3
+  maxArmDistance: 1
   stepDistance: 2.5
   stepDuration: 0.91
   stepCooldown: 0.46
-  joystickThreshold: 0.3
+  speedMultiplier: 1
+  groundHeightOffset: 0.1
   stepHeight: 0.19
   riseRatio: 0.513
   stepCurve:
@@ -59030,6 +59036,11 @@ MonoBehaviour:
   collisionCheckDistance: 0.5
   collisionRadius: 0.2
   collisionHeightOffset: 0.5
+  footstep: 
+  enableHapticFeedback: 1
+  hapticIntensity: 0.5
+  hapticDuration: 0.1
+  swingIndicatorPrefab: {fileID: 0}
 --- !u!143 &1720988801
 CharacterController:
   m_ObjectHideFlags: 0
@@ -62867,6 +62878,8 @@ GameObject:
   - component: {fileID: 1848346386}
   - component: {fileID: 1848346385}
   - component: {fileID: 1848346384}
+  - component: {fileID: 1848346389}
+  - component: {fileID: 1848346388}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -63101,6 +63114,43 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1848346388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848346382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/BGM/BGM_Painting
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &1848346389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848346382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!1 &1855517350
 GameObject:
   m_ObjectHideFlags: 0

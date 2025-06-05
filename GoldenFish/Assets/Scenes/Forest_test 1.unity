@@ -7282,7 +7282,7 @@ Terrain:
   m_GameObject: {fileID: 275878742}
   m_Enabled: 1
   serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: 42e0b4c4b30b9a848ba499f690cd7015, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: d832e64a7682e364c9a2caa731ad7a29, type: 2}
   m_TreeDistance: 5000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
@@ -58996,11 +58996,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xrOrigin: {fileID: 1720988798}
   head: {fileID: 1848346383}
-  moveSpeed: 1.5
-  stepDistance: 2.5
+  leftHand: {fileID: 702247326}
+  rightHand: {fileID: 1353906768}
+  leftZonePrefab: {fileID: 4070678852292543208, guid: 42edf526b7ad4f94d972cb9bd5a2e410,
+    type: 3}
+  rightZonePrefab: {fileID: 4070678852292543208, guid: 42edf526b7ad4f94d972cb9bd5a2e410,
+    type: 3}
+  zoneRadius: 0.3
+  readyColor: {r: 0, g: 1, b: 1, a: 1}
+  waitingColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  leftForwardOffset: {x: 0.26, y: -0.64, z: 0.24}
+  leftBackwardOffset: {x: -0.14, y: -0.84, z: 0.24}
+  rightForwardOffset: {x: -0.14, y: -0.84, z: -0.39}
+  rightBackwardOffset: {x: 0.26, y: -0.64, z: -0.39}
+  stepDistance: 3.29
   stepDuration: 0.91
-  stepCooldown: 0.46
-  joystickThreshold: 0.3
+  stepCooldown: 0.25
+  groundHeightOffset: 0.1
   stepHeight: 0.19
   riseRatio: 0.513
   stepCurve:
@@ -59030,6 +59042,11 @@ MonoBehaviour:
   collisionCheckDistance: 0.5
   collisionRadius: 0.2
   collisionHeightOffset: 0.5
+  footstep: event:/SoundFX/Puppet/FX_Footstep
+  showZones: 1
+  disableTriggerObject: {fileID: 0}
+  disableDistance: 1
+  disableMovement: 1
 --- !u!143 &1720988801
 CharacterController:
   m_ObjectHideFlags: 0
