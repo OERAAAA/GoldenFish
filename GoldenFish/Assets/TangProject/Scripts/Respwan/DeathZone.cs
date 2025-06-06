@@ -9,7 +9,7 @@ public class DeathZone : MonoBehaviour
         if (other.CompareTag(playerTag))
         {
             ReManager.Instance.RespawnPlayer(other.gameObject);
-            Debug.Log("Player entered death zone and was respawned.");
+
         }
     }
 }

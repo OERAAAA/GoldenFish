@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.XR;
 using System.Collections;
 using System.Collections.Generic;
+using FMODUnity;
 
 public class PhotoCapture : MonoBehaviour
 {
@@ -27,6 +28,8 @@ public class PhotoCapture : MonoBehaviour
     private bool canTakePhoto = true;       // 控制是否允许拍照
     private float rowHeight = 0f;           // 行高（根据照片比例计算）
     private int originalCullingMask;        // 记录原始相机的culling mask
+
+    [EventRef] public string shot;
 
     void Start()
     {
@@ -123,6 +126,8 @@ public class PhotoCapture : MonoBehaviour
 
         // 创建照片对象
         CreatePhotoObject(photoTexture);
+
+        RuntimeManager.PlayOneShot(shot);
 
         // 更新照片计数
         totalPhotosTaken++;

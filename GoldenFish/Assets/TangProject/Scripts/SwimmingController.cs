@@ -46,7 +46,7 @@ public class SwimmingController : MonoBehaviour
         playerRigidbody = GetComponent<Rigidbody>();
         if (!playerRigidbody || !leftController || !rightController || !playerCamera)
         {
-            Debug.LogError("SwimmingController requires proper components!");
+
             enabled = false;
             return;
         }

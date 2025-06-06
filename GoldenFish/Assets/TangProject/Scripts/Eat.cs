@@ -22,7 +22,7 @@ private void OnTriggerEnter(Collider other)
     {
         score++;
         RuntimeManager.PlayOneShot(catchSoundEvent);
-        Debug.Log("Score: " + score);
+
 
         // 通知 SinkInWater，必须先找它
         SinkInWater sinkScript = FindObjectOfType<SinkInWater>();

@@ -12,7 +12,7 @@ public class lookThroughGlass : MonoBehaviour
     public string triggerObjectTag = "Glass"; 
     public float triggerDistance = 0.2f;
 
-    float requiredTime = 2.5f;  // 需要持续的时间，单位秒
+    float requiredTime = 1.5f;  // 需要持续的时间，单位秒
     float timeSeeingThroughGlass = 0f;  // 用于计时
 
     public GameObject frosted;  // 要隐藏的对象
@@ -59,12 +59,12 @@ public class lookThroughGlass : MonoBehaviour
             if (hit.collider.CompareTag(glassTag))
             {
                 hitGlass = true;
-                Debug.Log("glass");
+
             }
             else if (hit.collider.CompareTag(targetTag))
             {
                 hitTarget = true;
-                Debug.Log("target");
+
 
             }
         }
@@ -78,7 +78,7 @@ public class lookThroughGlass : MonoBehaviour
 
             if (isSeeingThroughGlass)
             {
-                Debug.Log("✅ 刚刚开始透过玻璃看到目标了！");
+
                 if (frosted != null) frosted.SetActive(false);
                 if (glass != null) glass.SetActive(true);
                 if (particleEffect != null)
@@ -90,7 +90,7 @@ public class lookThroughGlass : MonoBehaviour
             else
             {
                 timeSeeingThroughGlass = 0f;
-                Debug.Log("❌ 不再透过玻璃看到目标了！");
+
                 if (frosted != null) frosted.SetActive(true);
                 if (glass != null) glass.SetActive(false);
                 if (particleEffect != null)
@@ -109,7 +109,7 @@ public class lookThroughGlass : MonoBehaviour
 
             if (timeSeeingThroughGlass >= requiredTime)
             {
-                Debug.Log("🌟 持续透过玻璃2秒，切换场景！");
+
                 SceneManager.LoadScene(nextSceneName); // 切换场景
             }
 

@@ -11,7 +11,7 @@ public class RespawnPoint : MonoBehaviour
         {
             // 通知 ReManager 这个区域是新的重生点
             ReManager.Instance.UpdateRespawnPoint(transform.position);
-            Debug.Log("Updated respawn point to: " + transform.position);
+
         }
     }
 }

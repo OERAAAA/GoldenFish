@@ -51,7 +51,7 @@ public class SceneURPFeatureController : MonoBehaviour
 
         rendererData.SetDirty();
         ForcePipelineUpdate();
-        Debug.Log($"已应用场景 {gameObject.scene.name} 的配置");
+
     }
 
     private void ForcePipelineUpdate()

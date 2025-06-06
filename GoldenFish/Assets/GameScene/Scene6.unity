@@ -650,6 +650,7 @@ GameObject:
   - component: {fileID: 83253990}
   - component: {fileID: 83253989}
   - component: {fileID: 83253988}
+  - component: {fileID: 83253992}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -886,6 +887,20 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &83253992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83253986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!4 &90066636 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1030974638, guid: abc00000000011254977182557325100,
@@ -2089,6 +2104,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1725714743124522665, guid: 084572b9f1857f742bce1825fc294d6a,
         type: 3}
+      propertyPath: shot
+      value: event:/SoundFX/Camera/New Event
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725714743124522665, guid: 084572b9f1857f742bce1825fc294d6a,
+        type: 3}
       propertyPath: spacing
       value: 0.08
       objectReference: {fileID: 0}
@@ -2101,6 +2121,11 @@ PrefabInstance:
         type: 3}
       propertyPath: maxOffset
       value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725714743124522665, guid: 084572b9f1857f742bce1825fc294d6a,
+        type: 3}
+      propertyPath: maxPhotos
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1725714743124522665, guid: 084572b9f1857f742bce1825fc294d6a,
         type: 3}
@@ -2187,6 +2212,11 @@ PrefabInstance:
       propertyPath: screenshotCamera
       value: 
       objectReference: {fileID: 83253991}
+    - target: {fileID: 1725714743124522665, guid: 084572b9f1857f742bce1825fc294d6a,
+        type: 3}
+      propertyPath: photoForwardOffset
+      value: -0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 1725714743124522665, guid: 084572b9f1857f742bce1825fc294d6a,
         type: 3}
       propertyPath: positionRandomness
@@ -4343,7 +4373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d304538a9900d2e43a86e6c6a7f0f2b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 547347549}
   delaySeconds: 1
 --- !u!82 &547347549
 AudioSource:
@@ -17585,7 +17615,7 @@ Transform:
   m_GameObject: {fileID: 1916340449}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.539, y: 0.718, z: 0.011}
+  m_LocalPosition: {x: 0.539, y: 0.524, z: 0.011}
   m_LocalScale: {x: 1.2161078, y: 0.7080824, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

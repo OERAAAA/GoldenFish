@@ -18,11 +18,7 @@ public class DelayedAudioPlayer : MonoBehaviour
         if (audioSource != null)
         {
             audioSource.Play();
-            Debug.Log("音频已播放");
         }
-        else
-        {
-            Debug.LogWarning("未分配 AudioSource");
-        }
+
     }
 }
