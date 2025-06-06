@@ -58,11 +58,11 @@ public class memory : MonoBehaviour
             {
                 foreach (RaycastHit hit in hits)
                 {
-                    Debug.Log("Hit object: " + hit.collider.name + " | Tag: " + hit.collider.tag);
+
 
                     if (hit.collider.CompareTag("memory"))
                     {
-                        Debug.Log("✅ memory seen!");
+
                         Proceed();
                         canProceed = false; // 防止重复调用
                         break;
@@ -78,7 +78,7 @@ public class memory : MonoBehaviour
     public void Proceed()
     {
         if (sequenceFinished) return;
-        Debug.Log("captured");
+
 
         StartCoroutine(ProceedAfterDelay());
     }

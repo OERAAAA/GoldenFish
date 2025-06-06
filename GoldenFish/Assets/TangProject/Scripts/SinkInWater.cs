@@ -26,7 +26,7 @@ public class SinkInWater : MonoBehaviour
         referenceCollider = referenceObject.GetComponent<Collider>();
         if (referenceCollider == null)
         {
-            Debug.LogError("Reference object does not have a collider.");
+
             return;
         }
 

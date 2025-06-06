@@ -15,18 +15,6 @@ public class FrogJumpController : MonoBehaviour
     public float gravity = -9.81f;
     public float landDelayTime = 0.5f;
 
-    [Header("Mini Jump Settings")]
-    public float miniJumpVelocityThreshold = 0.5f;
-    public float miniJumpForce = 2.5f;
-    public float miniHorizontalForce = 1.0f;
-
-    [Header("Advanced Jump Timing")]
-    public float jumpBufferTime = 0.1f;
-
-    [Header("Improved Crouch Detection")]
-    public float crouchDepthThreshold = 0.25f;   // 下蹲 Y 轴位移
-    public float crouchCooldownTime = 1.0f;       // 下蹲有效时间
-
     private Rigidbody playerRigidbody;
     private Vector3 lastHeadPosition;
     private Vector3 lastReferencePosition;
@@ -36,20 +24,13 @@ public class FrogJumpController : MonoBehaviour
     private bool isFirstJump = true;
     private bool isInLandDelay = false;
 
-    private float jumpBufferTimer = 0f;
-    private bool wantsBigJump = false;
-
-    // 下蹲状态
-    private bool wasCrouched = false;
-    private float crouchTimer = 0f;
-
     private void Start()
     {
         playerRigidbody = GetComponent<Rigidbody>();
 
         if (!playerRigidbody || !headTransform || !referenceObject)
         {
-            Debug.LogError("FrogJumpController requires headTransform, referenceObject and Rigidbody!");
+
             enabled = false;
             return;
         }
@@ -64,7 +45,6 @@ public class FrogJumpController : MonoBehaviour
     {
         if (!isInitialized) return;
 
-        DetectCrouch();
         DetectHeadJump();
 
         lastHeadPosition = headTransform.position;
@@ -76,27 +56,6 @@ public class FrogJumpController : MonoBehaviour
         if (!isGrounded)
         {
             playerRigidbody.velocity += new Vector3(0, gravity * Time.deltaTime, 0);
-        }
-    }
-
-    private void DetectCrouch()
-    {
-        float deltaY = lastHeadPosition.y - headTransform.position.y;
-
-        if (!wasCrouched && deltaY > crouchDepthThreshold)
-        {
-            wasCrouched = true;
-            crouchTimer = crouchCooldownTime;
-            Debug.Log("Crouch Detected");
-        }
-
-        if (wasCrouched)
-        {
-            crouchTimer -= Time.deltaTime;
-            if (crouchTimer <= 0f)
-            {
-                wasCrouched = false;
-            }
         }
     }
 
@@ -116,24 +75,13 @@ public class FrogJumpController : MonoBehaviour
         Vector3 relativeVelocity = velocityHead - velocityReference;
         float relY = relativeVelocity.y;
 
-        Debug.Log($"Relative Y Velocity: {relY:F3}");
 
-        // 大跳必须是下蹲后再快速抬头
-        if (wasCrouched && relY > upwardVelocityThreshold)
+
+        if (relY > upwardVelocityThreshold)
         {
             PerformJump(verticalJumpForce, horizontalJumpForce);
             hasJumped = true;
-            wasCrouched = false;
-            crouchTimer = 0f;
-            Debug.Log("Improved Big Jump Triggered!");
-        }
-        // 小跳不要求下蹲
-        else if (relY > miniJumpVelocityThreshold)
-        {
-            PerformJump(miniJumpForce, miniHorizontalForce);
-            hasJumped = true;
-            wasCrouched = false;
-            Debug.Log("Mini Jump Triggered!");
+
         }
     }
 
@@ -157,10 +105,6 @@ public class FrogJumpController : MonoBehaviour
         {
             isGrounded = true;
             hasJumped = false;
-            wantsBigJump = false;
-            jumpBufferTimer = 0f;
-            wasCrouched = false;
-            Debug.Log("Grounded");
 
             StartCoroutine(LandDelay());
         }
@@ -171,7 +115,7 @@ public class FrogJumpController : MonoBehaviour
         if (((1 << collision.gameObject.layer) & groundLayer) != 0)
         {
             isGrounded = false;
-            Debug.Log("Left Ground");
+
         }
     }
 
@@ -179,7 +123,7 @@ public class FrogJumpController : MonoBehaviour
     {
         isInitialized = true;
         hasJumped = false;
-        Debug.Log("Initialization Complete.");
+
     }
 
     private IEnumerator InitializeAfterDelay(float delay)
@@ -193,6 +137,6 @@ public class FrogJumpController : MonoBehaviour
         isInLandDelay = true;
         yield return new WaitForSeconds(landDelayTime);
         isInLandDelay = false;
-        Debug.Log("Land delay over. Ready for next jump detection.");
+
     }
 }

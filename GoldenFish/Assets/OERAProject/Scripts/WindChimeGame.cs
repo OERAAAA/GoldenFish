@@ -139,7 +139,7 @@ void CatchWind(GameObject wind, Vector3 catchPosition)
         if (unlockableItem != null)
         {
             unlockableItem.SetActive(true); // 启用
-            Debug.Log("物品已启用！");
+
         }
         itemUnlocked = true;
     }
@@ -148,7 +148,7 @@ void CatchWind(GameObject wind, Vector3 catchPosition)
     if (currentCatches >= maxCatches)
     {
         gameActive = false;
-        Debug.Log("游戏结束，已达到最大抓取数。");
+
     }
 
     // 删除被抓到的风
@@ -161,7 +161,7 @@ if (!secondItemUnlocked && currentCatches >= secondUnlockAtCatchCount)
     {
         secondUnlockableItem.SetActive(true);
         StartCoroutine(ScaleUpObject(secondUnlockableItem, secondUnlockTargetScale, scaleDuration));
-        Debug.Log("第二个物品已启用并开始缩放！");
+
     }
     secondItemUnlocked = true;
 }

@@ -39,6 +39,6 @@ public class ReManager : MonoBehaviour
             rb.angularVelocity = Vector3.zero;
         }
 
-        Debug.Log("Player respawned at last checkpoint.");
+
     }
 }

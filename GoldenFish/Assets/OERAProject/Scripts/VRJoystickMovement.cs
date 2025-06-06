@@ -168,9 +168,6 @@ public class ArmSwingMovement : MonoBehaviour
         if (leftHand != null) leftHandPrevPos = leftHand.position;
         if (rightHand != null) rightHandPrevPos = rightHand.position;
 
-        // 调试输出
-        if (leftHand == null) Debug.LogWarning("未找到左手控制器！");
-        if (rightHand == null) Debug.LogWarning("未找到右手控制器！");
     }
 
     void CreateSwingIndicators()
@@ -182,10 +179,7 @@ public class ArmSwingMovement : MonoBehaviour
             leftSwingIndicator.SetActive(false);
             rightSwingIndicator.SetActive(false);
         }
-        else
-        {
-            Debug.LogWarning("摆动指示器预制体未指定！");
-        }
+
     }
 
     void Update()
@@ -440,7 +434,7 @@ public class ArmSwingMovement : MonoBehaviour
             // 如果检测到碰撞体，且不是触发器，则返回有碰撞
             if (hit.collider != null && !hit.collider.isTrigger)
             {
-                Debug.Log($"检测到碰撞: {hit.collider.gameObject.name}");
+
                 return true;
             }
         }

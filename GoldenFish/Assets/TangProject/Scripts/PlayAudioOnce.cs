@@ -26,7 +26,7 @@ public class PlayAudioOnce : MonoBehaviour
         {
             audioSource.Play();
             hasPlayed = true;
-            Debug.Log("音频播放完成（首次进入）");
+
         }
     }
 }

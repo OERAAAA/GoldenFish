@@ -125,7 +125,7 @@ public class RedLightGreenLightGame : MonoBehaviour
     void ExitGame()
     {
         if (currentState == GameState.Inactive) return;
-        Debug.Log("���밲ȫ������Ϸ����");
+
         currentState = GameState.Inactive;
         directionalLight.intensity = originalIntensity;
         directionalLight.color = Color.white;
@@ -140,7 +140,7 @@ public class RedLightGreenLightGame : MonoBehaviour
         directionalLight.color = greenLightColor;
         directionalLight.intensity = originalIntensity;
         StartCoroutine(MonitorPlayerMovement());
-        Debug.Log($"��Ϸ��ʼ! �̵�ʱ��:{currentGreenLightDuration:F1}�� - ���ڿ����ƶ�");
+
     }
 
 IEnumerator TransitionToRedLight()
@@ -150,7 +150,7 @@ IEnumerator TransitionToRedLight()
     directionalLight.intensity = dimIntensity;
     directionalLight.color = warningColor;
     RuntimeManager.PlayOneShot(alarm);
-    Debug.Log("警告! 即将转向");
+
 
     // 首次触发警报，激活物品
     if (!hasTriggeredFirstAlarm)
@@ -159,7 +159,7 @@ IEnumerator TransitionToRedLight()
         if (firstAlarmItem != null)
         {
             firstAlarmItem.SetActive(true);
-            Debug.Log("首次进入警报状态，已启用物品。");
+
         }
     }
 
@@ -196,7 +196,7 @@ IEnumerator TransitionToRedLight()
         directionalLight.intensity = originalIntensity;
         stateTimer = currentRedLightDuration;
         isTurning = false;
-        Debug.Log($"�����ת����! ���ʱ��:{currentRedLightDuration:F1}�� - ���ڲ����ƶ�");
+
         RecordCurrentPositions();
     }
 
@@ -227,7 +227,7 @@ IEnumerator TransitionToRedLight()
         directionalLight.color = greenLightColor;
         stateTimer = currentGreenLightDuration;
         isTurning = false;
-        Debug.Log($"����ܱ�������! �̵�ʱ��:{currentGreenLightDuration:F1}�� - ���ڿ����ƶ�");
+
     }
 
     IEnumerator MonitorPlayerMovement()
@@ -265,7 +265,7 @@ IEnumerator TransitionToRedLight()
 
     void PlayerCaughtMoving()
     {
-        Debug.Log("�㱻ץ���ƶ���! ��Ϸʧ��");
+
         xrOrigin.position = startPosition;
         SetBearFacingPlayer(false);
         currentState = GameState.Inactive;

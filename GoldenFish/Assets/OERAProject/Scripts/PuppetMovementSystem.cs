@@ -68,7 +68,7 @@ public class FixedZonePuppetMovement : MonoBehaviour
     {
         if (!leftZonePrefab || !rightZonePrefab)
         {
-            Debug.LogError("必须指定左右手区域预制体！");
+
             enabled = false;
             return;
         }
@@ -136,7 +136,7 @@ public class FixedZonePuppetMovement : MonoBehaviour
             {
                 // 进入禁用状态
                 isDisabled = true;
-                Debug.Log("靠近物体，禁用移动");
+
             }
         }
         else
@@ -145,7 +145,7 @@ public class FixedZonePuppetMovement : MonoBehaviour
             {
                 // 离开禁用状态
                 isDisabled = false;
-                Debug.Log("离开物体，启用移动");
+
             }
         }
     }

@@ -151,12 +151,12 @@ void Update()
         if (currentMoveCount == 1 && objectToEnableOn2ndMove != null)
         {
             objectToEnableOn2ndMove.SetActive(true);
-            Debug.Log("第2次移动时启用了指定物体");
+
         }
         else if (currentMoveCount == 8 && objectToEnableOn5thMove != null)
         {
             objectToEnableOn5thMove.SetActive(true);
-            Debug.Log("第5次移动时启用了指定物体");
+
         }
 
         if (currentMoveCount >= disableAfterMoves && !hasDisabledFeatures)
@@ -191,14 +191,14 @@ void Update()
             plantModel.localScale = plantTargetScale;
 
         isMoving = false;
-        Debug.Log($"移动完成 ({currentMoveCount}/{maxMoveCount}) 方向: {direction}");
+
     }
 
     void DisableRendererFeatures()
     {
         if (rendererData == null)
         {
-            Debug.LogError("Renderer Data未分配！");
+
             return;
         }
 
@@ -210,7 +210,7 @@ void Update()
                 if (feature != null && feature.name == featureName)
                 {
                     feature.SetActive(false);
-                    Debug.Log($"已关闭Renderer Feature: {featureName}");
+
                     anyFeatureDisabled = true;
                     break;
                 }
@@ -225,9 +225,9 @@ void Update()
             if (targetAnimator != null)
             {
                 targetAnimator.SetBool(bloomParameterName, true);
-                Debug.Log($"已设置Animator参数 {bloomParameterName} = true");
+
             }
-            else Debug.LogWarning("未分配目标Animator，无法设置bloom参数");
+
 
             if (scaleUpObject != null)
             {
@@ -237,7 +237,7 @@ void Update()
 
             RuntimeManager.PlayOneShot(blossom);
             hasDisabledFeatures = true;
-            Debug.Log($"第{currentMoveCount}次移动后，已关闭指定Renderer Features");
+
         }
     }
 
@@ -261,7 +261,7 @@ void Update()
             }
             rendererData.SetDirty();
             GraphicsSettings.renderPipelineAsset = GraphicsSettings.renderPipelineAsset;
-            Debug.Log("重置移动计数并重新启用所有Renderer Features");
+
         }
     }
 
