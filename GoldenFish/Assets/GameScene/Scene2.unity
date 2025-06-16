@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4632832, g: 0.50777054, b: 0.5798658, a: 1}
+  m_IndirectSpecularColor: {r: 0.7195681, g: 0.7501881, b: 0.7941518, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9704,6 +9704,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Puppet.blend
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 92e1c3a0885bf85448c4f7af2243f0ec,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2439451725000786127, guid: 92e1c3a0885bf85448c4f7af2243f0ec,
         type: 3}
