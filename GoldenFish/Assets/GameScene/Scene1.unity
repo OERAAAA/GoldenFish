@@ -17250,7 +17250,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.25
+  m_Radius: 0.235
   m_Center: {x: 0, y: 0.21, z: 0}
 --- !u!1 &1180277444
 GameObject:
@@ -22357,7 +22357,7 @@ Transform:
   m_GameObject: {fileID: 1273402717}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.027, y: 0.2346, z: 0}
+  m_LocalPosition: {x: -0.007, y: 0.235, z: 0}
   m_LocalScale: {x: 0.3659659, y: 0.3659659, z: 0.3659659}
   m_ConstrainProportionsScale: 0
   m_Children: []
